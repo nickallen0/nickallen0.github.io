@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Nicholas Allen"
-  avatar           : # path of avatar image, e.g. "/assets/images/NJA-profile.jpg"
+  avatar           : "/assets/images/NJA-profile.jpg" # path of avatar image, e.g. "/assets/images/NJA-profile.jpg"
   bio              : "Working at the intersection of Ecology and Technology to **restore nature**."
   location         : "Newcastle, UK"
   email            : 
