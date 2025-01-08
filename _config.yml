@@ -17,14 +17,14 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "default"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "nick.github.io"
+title                    : "nickallen0.github.io"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Nicholas Allen"
 description              : "PhD candidate at Newcastle University, using remote sensing technology to assess Natural Capital in the UK"
 url                      : https://nickallen0.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : nickallen0/nickallen0.githun.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : nickallen0/nickallen0.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -121,10 +121,13 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:nicholas_68@hotmail.com"
+      url: "mailto:nicholas_68@hotmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin-in"
+      url: "https://www.linkedin.com/in/nickall3n/"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://bionysus.co"
+      url: "https://bionysus.co"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/nickallen0"
