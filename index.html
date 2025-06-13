@@ -40,12 +40,13 @@
         }
         
         .layout-title {
-            background: #535d29;
+            background: linear-gradient(135deg, #535d29 0%, #3d4420 50%, #535d29 100%);
             color: white;
-            padding: 15px 25px;
-            font-weight: 600;
-            font-size: 1.8rem;
-            padding-left: 205px; /* Use padding instead of margin to keep background color */
+            padding: 25px 25px 25px 205px;
+            font-weight: 700;
+            font-size: 2.2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
         }
         
         .layout-content {
@@ -65,9 +66,10 @@
         }
         
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-left: 180px; /* More room for the bigger profile photo */
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: 180px;
+            color: #f7f3e9;
         }
         
         /* Profile Photo */
@@ -92,11 +94,13 @@
         .nav a {
             color: white;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s;
         }
         
         .nav a:hover {
             color: #f7f3e9;
+            background: rgba(247, 243, 233, 0.1);
+            transform: translateY(-2px);
         }
         
         /* Sidebar Layout */
@@ -163,6 +167,46 @@
             margin-bottom: 10px;
         }
         
+        /* Thought Leadership Section */
+        .thought-leadership {
+            background: linear-gradient(135deg, #535d29 0%, #3d4420 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(83, 93, 41, 0.3);
+            border: none;
+        }
+        
+        .thought-leadership h2 {
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        
+        .thought-leadership p {
+            color: #f7f3e9;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        
+        .thought-leadership .btn {
+            background: white;
+            color: #535d29;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .thought-leadership .btn:hover {
+            background: #f7f3e9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
         /* Portfolio Grid */
         .portfolio-grid {
             display: grid;
@@ -178,6 +222,9 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid #535d29;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .project-card:hover {
@@ -205,6 +252,7 @@
             color: #535d29;
             font-size: 0.9rem;
             margin-bottom: 15px;
+            flex-grow: 1;
         }
         
         .tech-stack {
@@ -226,6 +274,7 @@
         .project-links {
             display: flex;
             gap: 10px;
+            margin-top: auto;
         }
         
         .btn {
@@ -354,6 +403,8 @@
             
             .layout-title {
                 padding-left: 25px; /* Reset padding on mobile */
+                font-size: 1.8rem; /* Smaller on mobile */
+                text-align: center;
             }
             
             .profile-photo {
@@ -369,11 +420,11 @@
     <div class="container">
         <!-- Box 1: Portfolio -->
         <div class="layout">
-            <div class="layout-title">Nicholas Allen - Geospatial Ecologist and Data Scientist</div>
+            <div class="layout-title">Nicholas Allen</div>
             <div class="layout-content">
                 <div class="header">
                     <img src="NJA-profile.jpg" alt="NJA Profile Photo" class="profile-photo">
-                    <div class="logo">Portfolio</div>
+                    <div class="logo">Geospatial Ecologist & Data Scientist</div>
                     <nav class="nav">
                         <a href="#contact" style="border: 2px solid white; padding: 8px 16px; border-radius: 6px; transition: all 0.3s;">Contact</a>
                     </nav>
@@ -390,22 +441,23 @@
                             <li><a href="mailto:nicholas_68@hotmail.com">📱 Schedule Call</a></li>
                         </ul>
                         
-                        <h3 style="margin-top: 30px;">Thought Leadership</h3>
-                        <ul class="sidebar-links">
-                            <li><a href="https://droneag.farm/importance-of-organic-matter/" target="_blank">📝 The Importance of Soil Organic Matter</a></li>
-                        
                         <h3 style="margin-top: 30px;">Current Status</h3>
                         <p style="color: #059669; font-weight: 600;">🟢 Available for Projects</p>
                         
                         <h3 style="margin-top: 30px;">Location</h3>
                         <p style="color: #535d29;">Newcastle Upon Tyne, UK</p>
-                        </ul>
                     </div>
                     
                     <div class="main-content">
                         <div class="section">
                             <h2>About Me</h2>
                             <p>Geospatial Ecologist with technical expertise in FLAG sector with a focus on carbon and nature abatement, leveraging technologies, models and AI.</p>
+                        </div>
+                        
+                        <div class="section thought-leadership">
+                            <h2>💡 Thought Leadership</h2>
+                            <p>Sharing insights on soil health, sustainable agriculture, and geospatial technology applications in environmental science.</p>
+                            <a href="https://droneag.farm/importance-of-organic-matter/" target="_blank" class="btn">📝 Read: The Importance of Soil Organic Matter</a>
                         </div>
                         
                         <div class="section">
@@ -472,13 +524,6 @@
                                     <h4>Schedule Call</h4>
                                     <p>15-30 min consultation</p>
                                     <a href="mailto:nicholas_68@hotmail.com" class="btn btn-primary">Book Time</a>
-                                </div>
-                                
-                                <div class="contact-method">
-                                    <div class="contact-icon">🐙</div>
-                                    <h4>GitHub</h4>
-                                    <p>Code Portfolio</p>
-                                    <a href="http://www.github.com/nickallen0/" class="btn btn-primary">View Projects</a>
                                 </div>
                             </div>
                             
