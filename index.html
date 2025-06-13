@@ -44,7 +44,7 @@
             color: white;
             padding: 15px 25px;
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             padding-left: 205px; /* Use padding instead of margin to keep background color */
         }
         
@@ -112,6 +112,7 @@
             padding: 20px;
             border-radius: 8px;
             border: 1px solid #535d29;
+            height: fit-content; /* This stops the sidebar from extending beyond its content */
         }
         
         .sidebar h3 {
@@ -320,6 +321,15 @@
             margin-bottom: 10px;
         }
         
+        /* Get in Touch Section - Full width without sidebar */
+        .get-in-touch-section {
+            background: #f7f3e9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #535d29;
+            margin-top: 30px;
+        }
+        
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .sidebar-layout {
@@ -357,19 +367,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Nicholas Allen</h1>
-        
-        <!-- Box 1 1: Portfolio -->
+        <!-- Box 1: Portfolio -->
         <div class="layout">
-            <div class="layout-title">Geospatial Ecologist and Data Scientist</div>
+            <div class="layout-title">Nicholas Allen - Geospatial Ecologist and Data Scientist</div>
             <div class="layout-content">
                 <div class="header">
                     <img src="NJA-profile.jpg" alt="NJA Profile Photo" class="profile-photo">
-                    <div class="logo">Nicholas Allen</div>
+                    <div class="logo">Portfolio</div>
                     <nav class="nav">
-                        <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" style="border: 2px solid white; padding: 8px 16px; border-radius: 6px; transition: all 0.3s;">Contact</a>
                     </nav>
                 </div>
                 
@@ -384,17 +390,22 @@
                             <li><a href="mailto:nicholas_68@hotmail.com">📱 Schedule Call</a></li>
                         </ul>
                         
+                        <h3 style="margin-top: 30px;">Thought Leadership</h3>
+                        <ul class="sidebar-links">
+                            <li><a href="https://droneag.farm/importance-of-organic-matter/" target="_blank">📝 The Importance of Soil Organic Matter</a></li>
+                        
                         <h3 style="margin-top: 30px;">Current Status</h3>
                         <p style="color: #059669; font-weight: 600;">🟢 Available for Projects</p>
                         
                         <h3 style="margin-top: 30px;">Location</h3>
                         <p style="color: #535d29;">Newcastle Upon Tyne, UK</p>
+                        </ul>
                     </div>
                     
                     <div class="main-content">
                         <div class="section">
                             <h2>About Me</h2>
-                            <p>Geospatial Ecologist with technical expertise in FLAG sector with a focus on carbon and nature abatement, leveraging technologies, models and AI.  </p>
+                            <p>Geospatial Ecologist with technical expertise in FLAG sector with a focus on carbon and nature abatement, leveraging technologies, models and AI.</p>
                         </div>
                         
                         <div class="section">
@@ -437,50 +448,45 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Box 2: Contact -->
-        <div class="layout">
-            <div class="layout-title"> Get in touch </div>
-            <div class="layout-content">
-                <div class="section">
-                    <h2>Let's Work Together</h2>
-                    <div class="contact-grid">
-                        <div class="contact-method">
-                            <div class="contact-icon">📧</div>
-                            <h4>Email</h4>
-                            <p>Send me a note</p>
-                            <a href="mailto:nicholas_68@hotmail.com" class="btn btn-primary">Send Message</a>
-                        </div>
                         
-                        <div class="contact-method">
-                            <div class="contact-icon">💼</div>
-                            <h4>LinkedIn</h4>
-                            <p>Professional Network</p>
-                            <a href="https://www.linkedin.com/in/nickall3n/" class="btn btn-primary">Connect</a>
+                        <!-- Get in Touch Section - Now inside main content area -->
+                        <div class="get-in-touch-section">
+                            <h2>Get in Touch</h2>
+                            <div class="contact-grid">
+                                <div class="contact-method">
+                                    <div class="contact-icon">📧</div>
+                                    <h4>Email</h4>
+                                    <p>Send me a note</p>
+                                    <a href="mailto:nicholas_68@hotmail.com" class="btn btn-primary">Send Message</a>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">💼</div>
+                                    <h4>LinkedIn</h4>
+                                    <p>Professional Network</p>
+                                    <a href="https://www.linkedin.com/in/nickall3n/" class="btn btn-primary">Connect</a>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">📅</div>
+                                    <h4>Schedule Call</h4>
+                                    <p>15-30 min consultation</p>
+                                    <a href="mailto:nicholas_68@hotmail.com" class="btn btn-primary">Book Time</a>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">🐙</div>
+                                    <h4>GitHub</h4>
+                                    <p>Code Portfolio</p>
+                                    <a href="http://www.github.com/nickallen0/" class="btn btn-primary">View Projects</a>
+                                </div>
+                            </div>
+                            
+                            <div style="text-align: center; margin-top: 30px; padding: 20px; background: white; border-radius: 8px; border: 1px solid #535d29;">
+                                <h3 style="color: #535d29; margin-bottom: 10px;">Currently Available</h3>
+                                <p style="color: #535d29;">Open to new opportunities • Remote or Newcastle, UK • Full-time or Contract</p>
+                            </div>
                         </div>
-                        
-                        <div class="contact-method">
-                            <div class="contact-icon">📅</div>
-                            <h4>Schedule Call</h4>
-                            <p>15-30 min consultation</p>
-                            <a href="mailto:nicholas_68@hotmail.com" class="btn btn-primary">Book Time</a>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <div class="contact-icon">🐙</div>
-                            <h4>GitHub</h4>
-                            <p>Code Portfolio</p>
-                            <a href="http://www.github.com/nickallen0/" class="btn btn-primary">View Projects</a>
-                        </div>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f7f3e9; border-radius: 8px; border: 1px solid #535d29;">
-                        <h3 style="color: #535d29; margin-bottom: 10px;">Currently Available</h3>
-                        <p style="color: #535d29;">Open to new opportunities • Remote or Newcastle, UK • Full-time or Contract</p>
                     </div>
                 </div>
             </div>
